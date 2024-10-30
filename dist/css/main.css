@@ -1,0 +1,156 @@
+/* Main panel */
+
+#blueglass-welcome {
+    background-size: contain; 
+    background-position: right center; 
+    background-repeat: no-repeat; 
+    display: none; 
+    height: 225px; 
+    border-left: 4px solid #22c0f1; 
+    background-image: url(../img/bg-cov.png);
+    margin: 0;
+    padding: 23px;
+    background-color: white;
+}
+
+#blueglass-welcome .welcome-panel-content {
+    display: flex; 
+    height: inherit;
+    margin-left: 0 !important;
+    max-width: none !important;
+    flex-direction: row;
+    height: 225px !important;
+    max-height: 225px !important;
+    min-height: 225px !important;
+}
+
+#blueglass-welcome .panel-left {
+    text-align: center;
+    width: 33%;
+    position: relative;
+}
+#blueglass-welcome .panel-left h2 {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+#blueglass-welcome .panel-left p {
+    font-size: 16px; 
+    margin: 0; 
+    padding: 0; 
+    padding-bottom: 5px;
+}
+#blueglass-welcome .panel-left .bg-logo {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#blueglass-welcome .panel-left .about-description {
+    position: absolute; 
+    bottom: -25px; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#blueglass-welcome .panel-center {
+    width: 33%;
+    position: relative;
+    text-align: center;
+}
+#blueglass-welcome .panel-center h3 {   
+    margin: 0;
+}
+#blueglass-welcome .pack_cur {
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+    margin: 0;
+}
+#blueglass-welcome .panel-center .main_status {
+    color: red; 
+    font-size: 18px; 
+    margin: 0;
+    display: inline-block;
+    position: relative;
+}
+#blueglass-welcome .panel-center .main_status.enabled {
+    color: green; 
+}
+#blueglass-welcome .panel-center .main_status.disabled {
+    padding-left: 20px;
+}
+#blueglass-welcome .panel-center .main_status.disabled::before {
+    content: '';
+    background-image: url(../img/warning.svg);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -5px;
+    top: 3px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#blueglass-welcome .upd_row {
+    margin: 0; 
+    font-size: 14px;
+}
+#blueglass-welcome .upd_num {
+    color: red;
+}
+
+#blueglass-welcome .panel-right {
+    width: 33%;
+    position: relative;
+    text-align: center;
+}
+#blueglass-welcome .panel-right h3{
+    margin: 0;
+}
+
+/* Admin panel */
+
+#adminsettings {
+    margin-top: 15px; 
+    display: flex; 
+    height: inherit; 
+    border-left: 4px solid #22c0f1; 
+    background: white; 
+    height: 150px; 
+    padding: 15px 23px;
+}
+#adminsettings .panel-left h3 {
+    padding: 0; 
+    margin: 0 0 10px 0;
+}
+
+#adminsettings .panel-left, #adminsettings .panel-right {
+    width: 50%; 
+    position: relative;
+}
+
+#adminsettings .panel-right .date_update {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+#adminsettings .panel-right .hidden_input {
+    display: none !important;
+}
+
+/* BUTTONS */
+
+.adm_but {
+    margin-top: -25px !important;
+}
+.button-primary {
+    margin-top: 15px !important; 
+    background: #22c0f1 !important; 
+    border-color: #22c0f1 !important;
+}
+.button-primary:hover {
+    background: #0da4d3 !important;
+}
+.button-primary:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
